@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi App</title>
+<meta name="theme-color" content="#8b5cf6">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+:root{--c:#8b5cf6;--bg:#141414;--card:#1e1e1e;--tx:#f2f2f2;--sub:#a8a8a8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--tx)}
+header{position:sticky;top:0;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:rgba(20,20,20,.92);backdrop-filter:blur(8px);border-bottom:1px solid #2a2a2a;z-index:5}
+h1{font-size:18px}
+.boton{display:inline-block;background:var(--c);color:#fff;text-decoration:none;padding:10px 18px;border-radius:10px;font-weight:600}
+.hero{padding:64px 20px;text-align:center;background:linear-gradient(180deg,color-mix(in srgb,var(--c) 22%,transparent),transparent)}
+.hero h2{font-size:30px;margin-bottom:12px}
+.hero p{color:var(--sub);max-width:520px;margin:0 auto 22px;line-height:1.5}
+section{padding:40px 20px;max-width:860px;margin:0 auto}
+h3{font-size:20px;margin-bottom:16px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid #2c2c2c;border-radius:14px;padding:18px}
+.card h4{margin-bottom:8px;color:var(--c)}
+.card p{color:var(--sub);font-size:14px;line-height:1.5}
+footer{padding:26px 20px;text-align:center;color:var(--sub);font-size:13px;border-top:1px solid #2a2a2a}
+.wa{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:28px;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+</style>
+</head>
+<body>
+<header><h1>Mi App</h1><a class="boton" href="#contacto">Contacto</a></header>
+<div class="hero">
+  <h2>Mi App</h2>
+  <p>Bienvenidos. Conocé nuestros servicios y contactanos directamente.</p>
+  <a class="boton" href="https://wa.me/" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+</div>
+<section>
+  <h3>Servicios</h3>
+  <div class="grid">
+    <div class="card"><h4>Servicio 1</h4><p>Descripción breve de lo que ofrece el negocio.</p></div>
+    <div class="card"><h4>Servicio 2</h4><p>Descripción breve de lo que ofrece el negocio.</p></div>
+    <div class="card"><h4>Servicio 3</h4><p>Descripción breve de lo que ofrece el negocio.</p></div>
+  </div>
+</section>
+<section id="contacto">
+  <h3>Contacto</h3>
+  <div class="card"><p><strong>Cliente</strong></p><p>WhatsApp: <a class="boton" style="margin-top:10px" href="https://wa.me/" target="_blank" rel="noopener">Enviar mensaje</a></p></div>
+</section>
+<footer>Hecho para Cliente · por <b>mate&amp;code</b></footer>
+<a class="wa" href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+</body>
+</html>
